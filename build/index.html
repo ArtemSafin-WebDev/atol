@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>
+        Главная страница
+    </title>
+</head>
+
+<body class="no-touch" ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 23 25" fill="none" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path class="acls-1" d="M1 11v3.23l14.88-.08-7.63 7.59L10.48 24 22 12.48 10.53 1 8.25 3.29l7.58 7.58z" stroke="#fff" vector-effect="non-scaling-stroke"/></symbol><symbol viewBox="0 0 23 25" fill="#fff" id="arrow-right-filled" xmlns="http://www.w3.org/2000/svg"><path class="bcls-1" d="M1 11v3.23l14.88-.08-7.63 7.59L10.48 24 22 12.48 10.53 1 8.25 3.29l7.58 7.58z" stroke="#fff" vector-effect="non-scaling-stroke"/></symbol><symbol id="burger" viewBox="0 0 30 11" xmlns="http://www.w3.org/2000/svg"><defs><style>.ccls-1{fill-rule:evenodd}</style></defs><path class="ccls-1" d="M30 2H0V0h30zM30 11H10V9h20z"/></symbol><symbol viewBox="0 0 8 6" id="checkmark" xmlns="http://www.w3.org/2000/svg"><path d="M2.55 4.75L.64 2.87 0 3.49 2.55 6 8 .63 7.36 0z"/></symbol><symbol viewBox="0 0 14 14" id="close" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.707.293a1 1 0 010 1.414l-12 12a1 1 0 01-1.414-1.414l12-12a1 1 0 011.414 0z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M.293.293a1 1 0 011.414 0l12 12a1 1 0 01-1.414 1.414l-12-12a1 1 0 010-1.414z"/></symbol><symbol viewBox="0 0 13 13" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M7.21 6.5L12.85.85a.48.48 0 000-.7.48.48 0 00-.7 0L6.5 5.79.85.15a.48.48 0 00-.7 0 .48.48 0 000 .7L5.79 6.5.15 12.15a.48.48 0 000 .7.47.47 0 00.35.15.47.47 0 00.35-.15L6.5 7.21l5.65 5.64a.48.48 0 00.7 0 .48.48 0 000-.7z"/></symbol><symbol viewBox="0 0 28 27" id="diagonal-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M.28 27l.1-5.56 16.81-.21L.81 5l4-4 16.36 16.12.2-16.71L27 .34l-.32 26.3zm.59-5.07l-.08 4.52 25.41-.31.3-25.3-4.64.06-.21 17.4L4.84 1.67 1.52 5l16.87 16.68z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 12 12" id="instagram" xmlns="http://www.w3.org/2000/svg"><path d="M4 6a2 2 0 112 2 2 2 0 01-2-2zM2.92 6A3.08 3.08 0 106 2.92 3.08 3.08 0 002.92 6zm5.56-3.2a.81.81 0 00.12.4.7.7 0 00.33.26.64.64 0 00.41 0 .66.66 0 00.37-.19.72.72 0 00.16-.79.76.76 0 00-.27-.28.68.68 0 00-.4-.12.71.71 0 00-.51.21.74.74 0 00-.21.51zm-4.9 8.08a3.26 3.26 0 01-1.12-.2 1.88 1.88 0 01-.69-.45 1.88 1.88 0 01-.45-.69 3.26 3.26 0 01-.2-1.12V6 3.58a3.26 3.26 0 01.2-1.12 1.88 1.88 0 01.45-.69 1.88 1.88 0 01.69-.45 3.26 3.26 0 011.12-.2h4.85a3.24 3.24 0 011.11.2 1.88 1.88 0 01.69.45 1.88 1.88 0 01.45.69 3.26 3.26 0 01.2 1.12v4.84a3.26 3.26 0 01-.2 1.12 2 2 0 01-1.14 1.14 3.24 3.24 0 01-1.11.2H6c-1.6 0-1.79.03-2.42 0zM3.53 0a4.39 4.39 0 00-1.46.32A2.81 2.81 0 001 1a2.81 2.81 0 00-.68 1.07A4.39 4.39 0 000 3.53v4.94a4.39 4.39 0 00.32 1.46A2.81 2.81 0 001 11a3 3 0 001.06.7 4.69 4.69 0 001.47.3h4.94a4.69 4.69 0 001.46-.27 3.17 3.17 0 001.76-1.76 4.42 4.42 0 00.31-1.5V6 3.53a4.42 4.42 0 00-.27-1.46A3 3 0 0011 1 2.81 2.81 0 009.93.32 4.15 4.15 0 008.47 0H3.53z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol viewBox="0 0 13 14" id="phone" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.66.41l2.795 3.03-1.492 1.617 4.192 4.545L9.67 7.959l2.906 3.15-.14.253-.35-.195.35.195-.001.001-.001.002-.004.007-.013.022-.046.076a5.16 5.16 0 01-.835 1.014c-.569.53-1.45 1.074-2.552.874-.548-.099-1.398-.523-2.313-1.122a19.223 19.223 0 01-2.949-2.394c-.961-.956-1.845-2.054-2.425-3.21-.58-1.154-.87-2.397-.59-3.616l.78.18c-.225.977-.004 2.024.525 3.078.528 1.053 1.35 2.082 2.274 3 .922.917 1.932 1.71 2.823 2.293.908.594 1.64.936 2.017 1.004.744.135 1.379-.22 1.864-.672a4.367 4.367 0 00.593-.687L9.67 9.139l-1.515 1.643-5.28-5.725 1.491-1.618L2.661 1.59l-.488.529-.588-.543L2.661.41z"/></symbol><symbol viewBox="0 0 16 16" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M8.41 16h-1V8.59H0v-1h7.41V0h1v7.59H16v1H8.41V16z"/></symbol><symbol viewBox="0 0 30 30" id="social-facebook" xmlns="http://www.w3.org/2000/svg"><path d="M16.842 23v-7.298h2.653l.397-2.845h-3.05v-1.816c0-.823.247-1.384 1.527-1.384L20 9.656V7.112A23.666 23.666 0 0017.623 7c-2.352 0-3.963 1.325-3.963 3.76v2.097H11v2.845h2.66V23h3.182z"/></symbol><symbol viewBox="0 0 30 30" id="social-instagram" xmlns="http://www.w3.org/2000/svg"><path d="M12.584 14.875a2.292 2.292 0 114.583 0 2.292 2.292 0 01-4.583 0zm-1.24 0a3.53 3.53 0 107.061 0 3.53 3.53 0 00-7.06 0zm6.376-3.67a.825.825 0 10.826-.825.825.825 0 00-.826.825zm-5.622 9.266c-.67-.03-1.035-.142-1.277-.236a2.137 2.137 0 01-.79-.515 2.12 2.12 0 01-.515-.79c-.095-.242-.206-.606-.237-1.277-.033-.724-.04-.942-.04-2.778s.008-2.053.04-2.778c.03-.67.143-1.034.237-1.277.125-.321.274-.55.514-.79.24-.242.47-.39.79-.515.243-.094.607-.206 1.278-.237.724-.033.942-.04 2.777-.04 1.835 0 2.053.008 2.779.04.67.031 1.034.143 1.276.237.322.124.55.274.791.514s.39.47.515.791c.094.242.206.606.236 1.277.033.725.04.942.04 2.778s-.007 2.053-.04 2.778c-.03.67-.143 1.035-.236 1.277a2.13 2.13 0 01-.515.79c-.24.24-.47.39-.79.515-.242.094-.607.206-1.277.236-.725.033-.943.04-2.779.04-1.836 0-2.053-.007-2.777-.04zm-.057-12.43c-.732.034-1.232.15-1.67.32a3.372 3.372 0 00-1.217.793 3.36 3.36 0 00-.793 1.218c-.17.437-.286.937-.32 1.669-.033.733-.041.967-.041 2.834s.008 2.101.042 2.834c.033.732.149 1.232.319 1.67.175.451.41.835.793 1.217a3.38 3.38 0 001.218.793c.438.17.937.286 1.669.32.733.033.967.041 2.834.041s2.102-.008 2.835-.042c.732-.033 1.232-.149 1.669-.319a3.38 3.38 0 001.217-.793c.383-.382.618-.766.794-1.218.17-.437.286-.937.319-1.669.033-.733.041-.967.041-2.834s-.008-2.101-.041-2.834c-.033-.732-.15-1.232-.32-1.67a3.38 3.38 0 00-.793-1.217 3.364 3.364 0 00-1.217-.793c-.437-.17-.937-.287-1.669-.32-.733-.033-.967-.041-2.834-.041s-2.102.008-2.835.042z"/></symbol><symbol viewBox="0 0 30 30" id="social-telegram" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.843 21.354c.935.41 1.285-.447 1.285-.447l2.474-12.424c-.02-.838-1.15-.331-1.15-.331L7.608 13.585s-.662.233-.603.642c.058.41.584.604.584.604l3.485 1.168s1.052 3.447 1.266 4.11c.195.642.37.661.37.661.195.078.37-.058.37-.058l2.26-2.045 3.504 2.687zm.604-10.671s.487-.293.468 0c0 0 .078.038-.175.311-.234.234-5.745 5.18-6.485 5.842a.204.204 0 00-.097.175l-.215 1.83c-.038.195-.292.215-.35.04l-.915-3a.287.287 0 01.116-.33l7.653-4.869z"/></symbol><symbol viewBox="0 0 30 30" id="social-vk" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.633 10.61c.111-.352 0-.61-.53-.61h-1.75c-.445 0-.65.223-.761.469 0 0-.89 2.055-2.152 3.39-.408.386-.593.509-.816.509-.11 0-.272-.123-.272-.474v-3.285c0-.421-.129-.609-.5-.609h-2.75c-.279 0-.446.196-.446.381 0 .4.63.492.695 1.616v2.441c0 .536-.102.633-.324.633-.593 0-2.037-2.064-2.893-4.426-.168-.46-.336-.645-.783-.645H7.6C7.1 10 7 10.223 7 10.469c0 .44.594 2.617 2.763 5.498C11.21 17.933 13.248 19 15.102 19c1.113 0 1.25-.237 1.25-.645v-1.487c0-.473.106-.568.458-.568.26 0 .705.123 1.743 1.072C19.74 18.495 19.936 19 20.603 19h1.75c.5 0 .75-.237.606-.704-.157-.466-.724-1.142-1.476-1.943-.408-.457-1.02-.949-1.205-1.195-.26-.316-.186-.456 0-.737 0 0 2.132-2.845 2.355-3.811z"/></symbol><symbol viewBox="0 0 30 30" id="social-youtube" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.728 10.306a1.79 1.79 0 011.259 1.259c.306 1.117.294 3.446.294 3.446s0 2.318-.294 3.435a1.79 1.79 0 01-1.259 1.259c-1.117.294-5.587.294-5.587.294s-4.459 0-5.588-.306a1.79 1.79 0 01-1.259-1.258C8 17.329 8 15 8 15s0-2.318.294-3.435a1.826 1.826 0 011.259-1.27C10.67 10 15.14 10 15.14 10s4.47 0 5.587.306zM17.434 15l-3.717 2.141V12.86L17.434 15z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg>    </div>
+
+    <div class="page-content">
+
+
+        <div class="contact-modal js-modal" id="contact-modal">
+            <div class="contact-modal__inner">
+                <button class="contact-modal__close js-close-modal">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </button>
+                <div class="contact-modal__form-layer active">
+                    <h3 class="contact-modal__small-heading">
+                        Обратная связь
+                    </h3>
+                    <h4 class="contact-modal__large-heading">
+                        Заполните форму ниже, и мы вскоре свяжемся с вами
+                    </h4>
+                    <form action="/" method="POST" class="contact-modal__form" data-need-validation="" id="contact-modal-form">
+        
+        
+                        <div class="contact-modal__form-fields">
+                            <div class="contact-modal__form-field">
+                                <input type="text" name="name" class="contact-modal__form-input" placeholder="ваше имя*"
+                                    required="">
+                            </div>
+                            <div class="contact-modal__form-field">
+                                <input type="tel" name="phone" class="contact-modal__form-input js-phone-input"
+                                    placeholder="ваш телефон*" required="" data-parsley-phone="">
+                            </div>
+                            <div class="contact-modal__form-field">
+                                <textarea name="comment" class="contact-modal__form-input" placeholder="Сообщение *"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-modal__form-controls">
+                            <button class="contact-modal__form-submit" type="submit">
+                                Отправить заявку
+                            </button>
+        
+                            <label class="contact-modal__form-policy">
+                                <input type="checkbox" class="contact-modal__form-policy-input" name="policy" checked=""
+                                    required="">
+                                <span class="contact-modal__form-policy-mark">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                        <use xlink:href="#checkmark"></use>
+                                    </svg>
+                                </span>
+                                <span class="contact-modal__form-policy-text">
+                                    Я согласен с <a href="#">политикой конфиденциальности</a>
+                                </span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-modal__form-success-layer">
+                    <div class="contact-modal__form-success">
+        
+        
+                        <img src="img/ok.svg" alt="" class="contact-modal__ok">
+                        <h3 class="contact-modal__large-heading">
+                            Спасибо<br>
+                            за вашу заявку
+                        </h3>
+                        <div class="contact-modal__success-text">
+                            <p>
+                                В ближайшее время с вами свяжется
+                                наш специалист – будьте на связи
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>        <aside class="page-sidebar">
+            <div class="container">
+        
+        
+                <div class="page-sidebar__inner">
+                    <a href="#intro" class="page-sidebar__logo">
+                        <img src="img/logo.svg" alt="" class="page-sidebar__logo-image">
+                    </a>
+                    <div class="page-sidebar__burger-menu">
+                        <div class="container">
+                            <nav class="page-sidebar__nav">
+                                <ul class="page-sidebar__nav-list">
+                                    <li class="page-sidebar__nav-list-item">
+                                        <a href="#business" class="page-sidebar__nav-link">
+                                            <div class="page-sidebar__nav-link-text">
+                                                Подобрать кассу
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__nav-list-item">
+                                        <a href="#solutions" class="page-sidebar__nav-link">
+                                            <div class="page-sidebar__nav-link-text">
+                                                Наши решения
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__nav-list-item">
+                                        <a href="#" class="page-sidebar__nav-link">
+                                            <div class="page-sidebar__nav-link-text">
+                                                ПО для бизнеса
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__nav-list-item">
+                                        <a href="#partners" class="page-sidebar__nav-link">
+                                            <div class="page-sidebar__nav-link-text">
+                                                Партнеры
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="page-sidebar__burger-menu-contacts">
+                                <div class="page-sidebar__burger-menu-contacts-links">
+                                    <a href="tel:+74957237420" class="page-sidebar__burger-menu-contacts-link">+7 (495)
+                                        723-74-20</a>
+                                    <a href="mailto:atol.@mail.ru"
+                                        class="page-sidebar__burger-menu-contacts-link">atol.@mail.ru</a>
+                                </div>
+                                <ul class="page-sidebar__burger-menu-social-list">
+                                    <li class="page-sidebar__burger-menu-social-list-item">
+                                        <a href="#" class="page-sidebar__burger-menu-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-social-youtube">
+                                                <use xlink:href="#social-youtube"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__burger-menu-social-list-item">
+                                        <a href="#" class="page-sidebar__burger-menu-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-social-instagram">
+                                                <use xlink:href="#social-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__burger-menu-social-list-item">
+                                        <a href="#" class="page-sidebar__burger-menu-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-social-facebook">
+                                                <use xlink:href="#social-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__burger-menu-social-list-item">
+                                        <a href="#" class="page-sidebar__burger-menu-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-social-telegram">
+                                                <use xlink:href="#social-telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="page-sidebar__burger-menu-social-list-item">
+                                        <a href="#" class="page-sidebar__burger-menu-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-social-vk">
+                                                <use xlink:href="#social-vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-sidebar__contacts">
+                        <div class="page-sidebar__contacts-links">
+                            <a href="tel:+74957237420" class="page-sidebar__contacts-link">+7 (495) 723-74-20</a>
+                            <a href="mailto:atol.@mail.ru" class="page-sidebar__contacts-link">atol.@mail.ru</a>
+                        </div>
+                        <div class="page-sidebar__languages">
+                            <a href="#" class="page-sidebar__languages-link active">
+                                RU
+                            </a>
+                            <a href="#" class="page-sidebar__languages-link">
+                                ky
+                            </a>
+                        </div>
+                    </div>
+                    <button class="page-sidebar__burger">
+                        <div class="page-sidebar__burger-closed">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-burger">
+                                <use xlink:href="#burger"></use>
+                            </svg>
+                        </div>
+                        <div class="page-sidebar__burger-open">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                        </div>
+        
+                    </button>
+                </div>
+            </div>
+        </aside>        <div class="callback js-open-modal">
+            <a href="#contact-modal" class="callback__btn">
+                <svg width="14" height="14" aria-hidden="true" class="icon-phone">
+                    <use xlink:href="#phone"></use>
+                </svg>
+                Обратная связь
+            </a>
+        </div>        <main class="page-main">
+
+
+<section class="section" id="intro">
+    <div class="intro">
+        <div class="intro__bg">
+
+
+            <picture>
+                <source srcset="img/intro-mobile.jpg" media="(max-width: 640px)">
+                <img src="img/intro-section-bg.jpg" alt="MDN" class="intro__bg-image">
+            </picture>
+        </div>
+        <div class="container">
+
+
+            <div class="intro__content">
+                <h1 class="intro__main-heading">
+                    Онлайн-кассы<br> Атол для Киргизии
+                </h1>
+                <div class="intro__text">
+                    <p>
+                        Наша компания следит за законодательством Киргизии и обновляет свое программное обеспечение,
+                        чтобы
+                        вы занимались только бизнесом, и не волновались о мелочах
+                    </p>
+                </div>
+            </div>
+            <a href="#business" class="intro__btn">
+                Выбрать кассу
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="demo">
+        <div class="demo__content">
+            <div class="demo__video-wrapper">
+                <img src="img/demo-preview.jpg" alt="" class="demo__video-preview">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="business">
+    <div class="business">
+        <div class="container">
+
+
+            <div class="business__content">
+                <h2 class="business__heading">
+                    Для бизнеса<br> любого размера
+                </h2>
+                <div class="business__slider js-business-slider">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper business__list">
+                            <li class="swiper-slide business__list-item">
+                                <a href="#" class="business__card">
+                                    <img src="img/business/1.svg" alt="" class="business__card-bg-image">
+                                    <div class="business__card-photo-container">
+                                        <img src="img/business/1.jpg" alt="" class="business__card-photo">
+                                    </div>
+                                    <h3 class="business__card-title">
+                                        Для малого бизнеса
+                                    </h3>
+                                    <ul class="business__card-features-list">
+                                        <li class="business__card-features-list-item">
+                                            1 точка
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Бутик
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            До 3х работников
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Парикмахерская
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Маленькая проходимость
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Киоск
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Кофейня
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Цветочный магазин
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Точка на рынке
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Фастфуд
+                                        </li>
+                                    </ul>
+                                    <div class="business__card-action">
+                                        Перейти
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right-filled">
+                                            <use xlink:href="#arrow-right-filled"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide business__list-item">
+                                <a href="#" class="business__card">
+                                    <img src="img/business/2.svg" alt="" class="business__card-bg-image">
+                                    <div class="business__card-photo-container">
+                                        <img src="img/business/2.jpg" alt="" class="business__card-photo">
+                                    </div>
+                                    <h3 class="business__card-title">
+                                        Для среднего бизнеса
+                                    </h3>
+                                    <ul class="business__card-features-list">
+                                        <li class="business__card-features-list-item">
+                                            1 точка
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Бутик
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            До 3х работников
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Парикмахерская
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Маленькая проходимость
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Киоск
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Кофейня
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Цветочный магазин
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Точка на рынке
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Фастфуд
+                                        </li>
+                                    </ul>
+                                    <div class="business__card-action">
+                                        Перейти
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right-filled">
+                                            <use xlink:href="#arrow-right-filled"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide business__list-item">
+                                <a href="#" class="business__card">
+                                    <img src="img/business/3.svg" alt="" class="business__card-bg-image">
+                                    <div class="business__card-photo-container">
+                                        <img src="img/business/3.jpg" alt="" class="business__card-photo">
+                                    </div>
+                                    <h3 class="business__card-title">
+                                        Для среднего бизнеса
+                                    </h3>
+                                    <ul class="business__card-features-list">
+                                        <li class="business__card-features-list-item">
+                                            1 точка
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Бутик
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            До 3х работников
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Парикмахерская
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Маленькая проходимость
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Киоск
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Кофейня
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Цветочный магазин
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Точка на рынке
+                                        </li>
+                                        <li class="business__card-features-list-item">
+                                            Фастфуд
+                                        </li>
+                                    </ul>
+                                    <div class="business__card-action">
+                                        Перейти
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right-filled">
+                                            <use xlink:href="#arrow-right-filled"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="section" id="solutions">
+    <div class="solutions">
+        <div class="container">
+
+
+            <div class="solutions__content">
+                <h2 class="solutions__heading">
+                    Наши решения для вашего бизнеса
+                </h2>
+                <ul class="solutions__list">
+                    <li class="solutions__list-item">
+                        <a href="#solution-modal-1" class="solutions__card">
+                            <div class="solutions__card-bg">
+                                <img src="img/solutions/1.jpg" alt="" class="solutions__card-bg-image">
+                            </div>
+                            <div class="solutions__card-bottom-row">
+                                <h3 class="solutions__card-title">
+                                    Sigma 5 pay
+                                </h3>
+                                <div class="solutions__card-icon">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right-filled">
+                                        <use xlink:href="#arrow-right-filled"></use>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </a>
+                        <div class="solutions__modal js-modal" id="solution-modal-1">
+                            <div class="solutions__modal-inner">
+                                <button class="solutions__modal-close js-close-modal">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+                                <div class="solutions__modal-illustration">
+                                    <img src="img/device.webp" alt="" class="solutions__modal-illustration-image">
+                                    <div class="solutions__modal-feature" style="left: 35%; top: 50%;">
+                                        <div class="solutions__modal-feature-icon">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="solutions__modal-feature-dropdown">
+                                            <div class="solutions__modal-feature-dropdown-inner">
+                                                Прием оплаты банковской картой Visa, Master Card, Золотая Корона
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="solutions__modal-content">
+                                    <h3 class="solutions__modal-heading">
+                                        Sigma 5 pay
+                                    </h3>
+                                    <div class="solutions__modal-text">
+                                        <p>
+                                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+                                            несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                                            начинающему оратору отточить навык публичных выступлений в домашних
+                                            условиях.
+                                        </p>
+                                    </div>
+                                    <div class="solutions__modal-accordions">
+                                        <div class="solutions__modal-accordion js-accordion">
+                                            <div class="solutions__modal-accordion-btn js-accordion-btn">
+                                                <span class="solutions__modal-accordion-btn-text">
+                                                    Технические характеристики
+                                                </span>
+
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                    <use xlink:href="#plus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="solutions__modal-accordion-content js-accordion-content">
+                                                <div class="solutions__modal-accordion-content-inner">
+                                                    <p>
+                                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                        сгенерировать несколько абзацев более менее осмысленного текста
+                                                        рыбы
+                                                        на русском языке, а начинающему оратору отточить навык публичных
+                                                        выступлений в домашних условиях.
+                                                    </p>
+                                                    <p>
+                                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                        сгенерировать несколько абзацев более менее осмысленного текста
+                                                        рыбы
+                                                        на русском языке, а начинающему оратору отточить навык публичных
+                                                        выступлений в домашних условиях.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="solutions__modal-accordion js-accordion">
+                                            <div class="solutions__modal-accordion-btn js-accordion-btn">
+
+                                                <span class="solutions__modal-accordion-btn-text">
+                                                    Инструкция
+                                                </span>
+                                                <svg width="14" height="14" aria-hidden="true" class="icon-plus">
+                                                    <use xlink:href="#plus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="solutions__modal-accordion-content js-accordion-content">
+                                                <div class="solutions__modal-accordion-content-inner">
+                                                    <p>
+                                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                        сгенерировать несколько абзацев более менее осмысленного текста
+                                                        рыбы
+                                                        на русском языке, а начинающему оратору отточить навык публичных
+                                                        выступлений в домашних условиях.
+                                                    </p>
+                                                    <p>
+                                                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                                                        сгенерировать несколько абзацев более менее осмысленного текста
+                                                        рыбы
+                                                        на русском языке, а начинающему оратору отточить навык публичных
+                                                        выступлений в домашних условиях.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="solutions__modal-link">
+                                            <div class="solutions__modal-link-text">
+                                                Видео распаковки
+                                            </div>
+
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="solutions__modal-bottom-row">
+                                        <div class="solutions__modal-price">
+                                            <h4 class="solutions__modal-price-heading">
+                                                Стоимость
+                                            </h4>
+                                            <div class="solutions__modal-price-amount">
+                                                15000 ₽
+                                            </div>
+                                        </div>
+                                        <a href="#contact-modal" class="solutions__modal-apply-link js-open-modal">
+                                            Отправить заявку
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="solutions__list-item">
+                        <a href="#" class="solutions__card">
+                            <div class="solutions__card-bg">
+                                <img src="img/solutions/2.jpg" alt="" class="solutions__card-bg-image">
+                            </div>
+                            <div class="solutions__card-bottom-row">
+                                <h3 class="solutions__card-title">
+                                    Sigma 7 — современная мобильная онлайн-касса
+                                </h3>
+                                <div class="solutions__card-icon">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right-filled">
+                                        <use xlink:href="#arrow-right-filled"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="solutions__list-item">
+                        <a href="#" class="solutions__card">
+                            <div class="solutions__card-bg">
+                                <img src="img/solutions/3.jpg" alt="" class="solutions__card-bg-image">
+                            </div>
+                            <div class="solutions__card-bottom-row">
+                                <h3 class="solutions__card-title">
+                                    Фискальные регистраторы
+                                </h3>
+                                <div class="solutions__card-icon">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right-filled">
+                                        <use xlink:href="#arrow-right-filled"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="equipment">
+        <div class="container">
+
+
+            <div class="equipment__content">
+                <h2 class="equipment__heading">
+                    Легко подключайте оборудование
+                </h2>
+                <div class="equipment__row">
+                    <div class="equipment__col">
+                        <div class="equipment__specs">
+                            <h3 class="equipment__specs-heading">
+                                Минимальные требования
+                            </h3>
+                            <div class="equipment__specs-blocks">
+                                <div class="equipment__specs-block">
+                                    <div class="equipment__specs-block-key">
+                                        Процессор:
+                                    </div>
+                                    <div class="equipment__specs-block-value">
+                                        от 1.33 ГГц с поддержкой<br> SSE2 и не менее 2 ядер
+                                    </div>
+                                </div>
+                                <div class="equipment__specs-block">
+                                    <div class="equipment__specs-block-key">
+                                        Память:
+                                    </div>
+                                    <div class="equipment__specs-block-value">
+                                        1 Гб
+                                    </div>
+                                </div>
+                                <div class="equipment__specs-block">
+                                    <div class="equipment__specs-block-key">
+                                        OC:
+                                    </div>
+                                    <div class="equipment__specs-block-value">
+                                        Windows XP, XP Embedded,<br> 2003, 7, 8, 10, 10 IoT
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equipment__col">
+                        <ul class="equipment__hardware-list">
+                            <li class="equipment__hardware-list-item">
+                                <a href="#" class="equipment__hardware-link">
+                                    <div class="equipment__hardware-link-bg">
+                                        <img src="img/equipment-bg.jpg" alt=""
+                                            class="equipment__hardware-link-bg-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-icon">
+                                        <img src="img/equipment/1.svg" alt=""
+                                            class="equipment__hardware-link-icon-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-text">
+                                        Эквайринг большинства банков
+                                    </div>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="equipment__hardware-list-item">
+                                <a href="#" class="equipment__hardware-link">
+                                    <div class="equipment__hardware-link-bg">
+                                        <img src="img/equipment-bg.jpg" alt=""
+                                            class="equipment__hardware-link-bg-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-icon">
+                                        <img src="img/equipment/2.svg" alt=""
+                                            class="equipment__hardware-link-icon-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-text">
+                                        Электронные весы
+                                    </div>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="equipment__hardware-list-item">
+                                <a href="#" class="equipment__hardware-link">
+                                    <div class="equipment__hardware-link-bg">
+                                        <img src="img/equipment-bg.jpg" alt=""
+                                            class="equipment__hardware-link-bg-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-icon">
+                                        <img src="img/equipment/3.svg" alt=""
+                                            class="equipment__hardware-link-icon-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-text">
+                                        Дисплей покупателя
+                                    </div>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="equipment__hardware-list-item">
+                                <a href="#" class="equipment__hardware-link">
+                                    <div class="equipment__hardware-link-bg">
+                                        <img src="img/equipment-bg.jpg" alt=""
+                                            class="equipment__hardware-link-bg-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-icon">
+                                        <img src="img/equipment/4.svg" alt=""
+                                            class="equipment__hardware-link-icon-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-text">
+                                        Сканер штрихкода
+                                    </div>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="equipment__hardware-list-item">
+                                <a href="#" class="equipment__hardware-link">
+                                    <div class="equipment__hardware-link-bg">
+                                        <img src="img/equipment-bg.jpg" alt=""
+                                            class="equipment__hardware-link-bg-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-icon">
+                                        <img src="img/equipment/5.svg" alt=""
+                                            class="equipment__hardware-link-icon-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-text">
+                                        Денежный ящик
+                                    </div>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="equipment__hardware-list-item">
+                                <a href="#" class="equipment__hardware-link">
+                                    <div class="equipment__hardware-link-bg">
+                                        <img src="img/equipment-bg.jpg" alt=""
+                                            class="equipment__hardware-link-bg-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-icon">
+                                        <img src="img/equipment/6.svg" alt=""
+                                            class="equipment__hardware-link-icon-image">
+                                    </div>
+                                    <div class="equipment__hardware-link-text">
+                                        Моделей оборудования
+                                    </div>
+
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="integrations">
+        <div class="container">
+
+
+            <div class="integrations__content">
+                <h2 class="integrations__heading">
+                    Готовые интеграции
+                    с дополнительными модулями
+                </h2>
+                <ul class="integrations__list">
+                    <li class="integrations__list-item">
+                        <a href="#" class="integrations__card">
+                            <div class="integrations__card-image-container">
+                                <img src="img/integrations/1.jpg" alt="" class="integrations__card-image">
+                            </div>
+                            <div class="integrations__card-content">
+                                <h3 class="integrations__card-title">
+                                    Автоматизируйте систему лояльности
+                                </h3>
+                                <div class="integrations__card-text">
+                                    <p>
+                                        Универсальный интерфейс для интеграции с системами лояльности для тех, кому
+                                        недостаточно возможностей Frontol Discount Unit, но не хочется платить за
+                                        дорогую
+                                        систему лояльности и её внедрение. Priority API умеетв двухстороннем порядке
+                                        обмениваться с внешними системами лояльности и легко интегрируется.
+                                    </p>
+                                </div>
+                                <div class="integrations__card-bottom-row">
+                                    <div class="integrations__card-amount">
+                                        9
+                                    </div>
+                                    <img src="img/countries.png" alt="" class="integrations__card-countries-image">
+                                    <div class="integrations__card-amount-text">
+                                        <p>
+                                            Готовых интеграций<br>
+                                            с внешними системами лояльности
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="integrations__list-item">
+                        <a href="#" class="integrations__card">
+                            <div class="integrations__card-image-container">
+                                <img src="img/integrations/2.jpg" alt="" class="integrations__card-image">
+                            </div>
+                            <div class="integrations__card-content">
+                                <h3 class="integrations__card-title">
+                                    Подключение систем наблюдения
+                                </h3>
+                                <div class="integrations__card-text">
+                                    <p>
+                                        Универсальный модуль для интеграции с системами видеонаблюдения
+                                        и событийного контроля. Для владельца бизнеса это отличная возможность наладить
+                                        кассовую дисциплину, а для кассира – это спокойствие и ясное понимание, что
+                                        возможные ошибки обязательно будут выявлены и решение по ним будет справедливым.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="choose">
+        <div class="container">
+
+
+            <div class="choose__content">
+                <div class="choose__row">
+                    <div class="choose__col">
+                        <img src="img/choose.jpg" alt="" class="choose__image">
+                    </div>
+                    <div class="choose__col">
+                        <h2 class="choose__heading">
+                            Определились с выбором?
+                        </h2>
+                        <div class="choose__heading-text">
+                            <p>
+                                Если вам сложно определиться с выбором, напишите нам. Мы поможем найти! Если вы не нашли
+                                то,
+                                что искали
+                            </p>
+                        </div>
+                        <form action="/" method="POST" class="choose__form" data-need-validation="" id="choose-form">
+                            <div class="choose__form-fields">
+
+
+                                <div class="choose__form-field">
+                                    <input type="text" class="choose__form-input" required="" placeholder="ваше имя*">
+                                </div>
+                                <div class="choose__form-field">
+                                    <input type="tel" class="choose__form-input js-numeric-input" required=""
+                                        placeholder="ваш телефон*">
+                                </div>
+                                <div class="choose__form-field">
+                                    <input type="email" class="choose__form-input" required="" placeholder="e-mail*">
+                                </div>
+                                <div class="choose__form-field">
+                                    <input type="text" class="choose__form-input" placeholder="Ваш город">
+                                </div>
+                                <div class="choose__form-field choose__form-field--fullwidth">
+                                    <div class="choose__form-checkboxes">
+                                        <label class="choose__form-checkbox">
+                                            <input type="radio" class="choose__form-checkbox-input" name="model"
+                                                checked="">
+                                            <span class="choose__form-checkbox-content">
+                                                <img src="img/model.png" alt="" class="choose__form-checkbox-image">
+                                                <span class="choose__form-checkbox-mark">
+                                                    <svg width="14" height="14" aria-hidden="true"
+                                                        class="icon-checkmark">
+                                                        <use xlink:href="#checkmark"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="choose__form-checkbox-text">
+                                                    Sigma 3
+                                                </span>
+                                            </span>
+
+                                        </label>
+                                        <label class="choose__form-checkbox">
+                                            <input type="radio" class="choose__form-checkbox-input" name="model">
+                                            <span class="choose__form-checkbox-content">
+                                                <img src="img/model.png" alt="" class="choose__form-checkbox-image">
+                                                <span class="choose__form-checkbox-mark">
+                                                    <svg width="14" height="14" aria-hidden="true"
+                                                        class="icon-checkmark">
+                                                        <use xlink:href="#checkmark"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="choose__form-checkbox-text">
+                                                    Sigma 5
+                                                </span>
+                                            </span>
+
+                                        </label>
+                                        <label class="choose__form-checkbox">
+                                            <input type="radio" class="choose__form-checkbox-input" name="model">
+                                            <span class="choose__form-checkbox-content">
+                                                <img src="img/model.png" alt="" class="choose__form-checkbox-image">
+                                                <span class="choose__form-checkbox-mark">
+                                                    <svg width="14" height="14" aria-hidden="true"
+                                                        class="icon-checkmark">
+                                                        <use xlink:href="#checkmark"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="choose__form-checkbox-text">
+                                                    22 ФР
+                                                </span>
+                                            </span>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="choose__form-bottom-row">
+                                <label class="choose__form-policy">
+                                    <input type="checkbox" class="choose__form-policy-input" name="policy" checked=""
+                                        required="">
+                                    <span class="choose__form-policy-mark">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-checkmark">
+                                            <use xlink:href="#checkmark"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="choose__form-policy-text">
+                                        Я согласен с <a href="#">политикой конфиденциальности</a>
+                                    </span>
+                                </label>
+                                <button class="choose__form-submit" type="submit">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="why-us">
+        <div class="container">
+
+            <div class="why-us__content">
+
+
+                <h2 class="why-us__heading">
+                    Почему «Атол»
+                </h2>
+                <div class="why-us__heading-text">
+                    <p>
+                        Версия поставки Frontol xPOS 3 поддерживает функционал, необходимый
+                        для продажи алкогольной продукции, полностью соответствует требованиям 54 ФЗ.
+
+                    </p>
+                </div>
+                <ul class="why-us__list">
+                    <li class="why-us__list-item">
+                        <div class="why-us__card">
+                            <div class="why-us__card-icon">
+                                <img src="img/why-us/1.svg" alt="" class="why-us__card-icon-image">
+                            </div>
+                            <div class="why-us__card-text">
+                                <p>
+                                    Лидер в автоматизации ритейла и сферы услуг
+                                    . Каждый 3я касса – произведена АТОЛ
+                                    1,5 млн касс работают сейчас
+
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="why-us__list-item">
+                        <div class="why-us__card">
+                            <div class="why-us__card-icon">
+                                <img src="img/why-us/2.svg" alt="" class="why-us__card-icon-image">
+                            </div>
+                            <div class="why-us__card-text">
+                                <p>
+                                    Атол — единственный производитель - участник
+                                    Пилотного проекта
+                                    системы администрирования ККМ
+                                    в Киргизии.
+                                    Работоспособность доказана проверкой
+                                    в боевых условиях
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="why-us__list-item">
+                        <div class="why-us__card">
+                            <div class="why-us__card-icon">
+                                <img src="img/why-us/3.svg" alt="" class="why-us__card-icon-image">
+                            </div>
+                            <div class="why-us__card-text">
+                                <p>
+                                    Производитель касс номер N1
+                                    Собственное производство
+                                    в Санкт-Петербурге и Москве
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="why-us__list-item">
+                        <div class="why-us__card">
+                            <div class="why-us__card-icon">
+                                <img src="img/why-us/4.svg" alt="" class="why-us__card-icon-image">
+                            </div>
+                            <div class="why-us__card-text">
+                                <p>
+                                    Кассы полностью соответствуют законодательству.
+                                    Включены в реестр…
+                                    Рекомендованы к установке
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="why-us__recommended">
+                    <img src="img/recommended.jpg" alt="" class="why-us__recommended-image">
+                    <div class="why-us__recommended-content">
+                        <h3 class="why-us__recommended-title">
+                            Рекомендованы налоговой Киргизии
+                        </h3>
+                        <div class="why-us__recommended-text">
+                            <p>
+                                Наша компания следит за законодательством Киргизии и обновляет свое программное
+                                обеспечение, чтобы вы занимались только бизнесом, и не волновались о мелочах
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="automate">
+        <div class="container">
+
+
+            <div class="automate__content">
+                <h2 class="automate__heading">
+                    Автоматизируй свой бизнес
+                    с кассами от лидера рынка
+                </h2>
+                <div class="automate__heading-text">
+                    <p>
+                        Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более
+                        менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных
+                        выступлений в домашних условиях.
+                    </p>
+                </div>
+                <div class="automate__slider js-automate-slider">
+                    <div class="swiper-container">
+                        <ol class="swiper-wrapper automate__list">
+                            <li class="swiper-slide automate__list-item">
+                                <div class="automate__card">
+                                    <div class="automate__card-photo-container">
+                                        <img src="img/automate/1.jpg" alt="" class="automate__card-photo">
+                                    </div>
+                                    <h3 class="automate__card-title">
+                                        Меньше бумажной отчетности
+                                    </h3>
+                                    <div class="automate__card-text">
+                                        <p>
+                                            Система автоматически фиксирует
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide automate__list-item">
+                                <div class="automate__card">
+                                    <div class="automate__card-photo-container">
+                                        <img src="img/automate/2.jpg" alt="" class="automate__card-photo">
+                                    </div>
+                                    <h3 class="automate__card-title">
+                                        Можно контролировать свой бизнес из любой точки мира:
+                                    </h3>
+                                    <div class="automate__card-text">
+                                        <p>
+                                            Видеть каждый чек с любого устройства.<br> Контролировать работу кассира
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide automate__list-item">
+                                <div class="automate__card">
+                                    <div class="automate__card-photo-container">
+                                        <img src="img/automate/3.jpg" alt="" class="automate__card-photo">
+                                    </div>
+                                    <h3 class="automate__card-title">
+                                        Повышать лояльность покупателей
+                                    </h3>
+                                    <div class="automate__card-text">
+                                        <p>
+                                            Управлять складом
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="partners">
+    <div class="partners">
+        <div class="container">
+
+
+            <div class="partners__content">
+                <h2 class="partners__heading">
+                    Партнеры АТОЛ в Кыргызстане
+                </h2>
+                <ul class="partners__list">
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/1.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/2.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/3.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/4.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/3.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/4.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/1.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/2.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/1.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/2.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/3.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/4.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/3.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/4.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/1.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="partners__list-item">
+                        <div class="partners__card">
+                            <img src="img/partners/2.png" alt="" class="partners__card-image">
+
+                            <div class="partners__card-content">
+                                <img src="img/mobilebase.png" alt="" class="partners__card-content-logo">
+                                <div class="partners__card-content-description">
+                                    <p>
+                                        это международный бренд ведущего корейского производителя Daishin Group, под
+                                        которым
+                                        производятся и поставляются мобильные компьютеры.
+                                    </p>
+                                </div>
+                                <div class="partners__card-content-bottom-row">
+                                    <a href="tel:+79995467346" class="partners__card-content-phone">7 999 546 73 46</a>
+                                    <div class="partners__card-content-city">
+                                        г. Москва
+                                    </div>
+                                    <div class="partners__card-content-social">
+                                        <a href="#" class="partners__card-content-social-link">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="page-footer">
+    <div class="container">
+
+
+        <div class="page-footer__content">
+            <a href="#intro" class="page-footer__logo">
+                <img src="img/logo-red.svg" alt="" class="page-footer__logo-image">
+            </a>
+            <div class="page-footer__requisites">
+                <p>
+                    ООО «АТОЛ», ИНН 5010051677,<br>
+                    129085, Москва, ул. Годовикова,<br>
+                    д. 9, стр. 17, этаж 4, пом. 5
+                </p>
+            </div>
+            <div class="page-footer__schedule">
+                <p>
+                    График работы:<br>
+                    пн-пт: 10:00-18:00<br>
+                    сб-вс: выходные
+                </p>
+            </div>
+            <div class="page-footer__contacts">
+                <a href="tel:+74957307420" class="page-footer__phone">+7 (495) 730-74-20</a>
+                <ul class="page-footer__social-list">
+                    <li class="page-footer__social-list-item">
+                        <a href="#" class="page-footer__social-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-social-youtube">
+                                <use xlink:href="#social-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-footer__social-list-item">
+                        <a href="#" class="page-footer__social-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-social-instagram">
+                                <use xlink:href="#social-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-footer__social-list-item">
+                        <a href="#" class="page-footer__social-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-social-facebook">
+                                <use xlink:href="#social-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-footer__social-list-item">
+                        <a href="#" class="page-footer__social-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-social-telegram">
+                                <use xlink:href="#social-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-footer__social-list-item">
+                        <a href="#" class="page-footer__social-link">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-social-vk">
+                                <use xlink:href="#social-vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        </main>
+        <style>
+            .ie-placeholder {
+                z-index: 4000;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #202020;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            .ie-placeholder__message {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 500;
+                margin: auto;
+            }
+            @supports (display: grid) {
+                .ie-placeholder {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="ie-placeholder">
+            <div class="ie-placeholder__message">
+                Извините, ваш браузер не поддерживается
+            </div>
+        </div>        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="assets/js/backend.js"></script>
+    </div>
+</body>
+
+</html>

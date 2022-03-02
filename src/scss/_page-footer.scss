@@ -1,0 +1,143 @@
+.page-footer {
+    @include breakpointMF(small-tablet) {
+        padding-left: calc(var(--sidebar-width) + 11rem);
+        padding-top: 9rem;
+        padding-right: 3rem;
+    }
+
+    @include breakpoint(mobile) {
+        padding-top: 4rem;
+    }
+}
+
+.page-footer__content {
+    background-color: #000;
+    color: white;
+    padding: 0 9rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 5rem;
+
+    @include breakpoint(mobile) {
+        padding: 3.2rem;
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 3.5rem;
+        background-image: url('../img/footer-mobile-bg.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.page-footer__logo {
+    width: 18rem;
+    flex-shrink: 0;
+
+    @include breakpoint(mobile) {
+        width: 12rem;
+    }
+}
+
+.page-footer__logo-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.page-footer__requisites {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+
+    @include breakpoint(mobile) {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+}
+
+.page-footer__schedule {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+
+    @include breakpoint(mobile) {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+}
+
+.page-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    @include breakpoint(mobile) {
+        gap: 1rem;
+    }
+}
+
+.page-footer__phone {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
+}
+
+.page-footer__social-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+
+    @include breakpoint(mobile) {
+        gap: .6rem;
+    }
+}
+
+.page-footer__social-link {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: black;
+        transition: fill 0.2s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: var(--primary-color);
+        svg {
+            fill: white;
+        }
+    }
+}

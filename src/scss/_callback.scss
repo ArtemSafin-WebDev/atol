@@ -1,0 +1,38 @@
+.callback {
+    position: absolute;
+    z-index: 100;
+    top: 3rem;
+    right: 3rem;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+ 
+    .modal-open & {
+        right: calc(3rem + var(--sb-width, 0));
+    }
+}
+
+.callback__btn {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.8rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: white;
+    background: #28282a;
+    box-shadow: inset 0px 0px 2.7rem rgba(0, 0, 0, 0.4);
+    border-radius: 7rem;
+    &:link,
+    &:visited {
+        color: white;
+    }
+    svg {
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: currentColor;
+        margin-right: 0.6rem;
+    }
+}

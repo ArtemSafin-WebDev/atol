@@ -1,0 +1,9 @@
+.section {
+   
+
+    @include breakpointMF(small-tablet) {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}

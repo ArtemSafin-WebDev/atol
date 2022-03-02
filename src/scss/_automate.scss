@@ -1,0 +1,169 @@
+.automate {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include breakpointMF(small-tablet) {
+        flex-grow: 1;
+        padding-right: 3rem;
+        padding-left: calc(var(--sidebar-width) + 11rem);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 8rem;
+    }
+}
+
+.automate__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.4rem;
+    line-height: 115%;
+    margin-bottom: 4rem;
+    max-width: 80rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 105%;
+        margin-bottom: 2rem;
+    }
+}
+
+.automate__heading-text {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: #c1c1c1;
+    max-width: 83rem;
+    margin-bottom: 9rem;
+    font-family: var(--cofo);
+
+    @include breakpoint(mobile) {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 130%;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.automate__list {
+    @include breakpointMF(small-tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 1rem;
+    }
+}
+
+.automate__slider {
+    .swiper-container {
+        overflow: visible;
+    }
+
+    @include breakpoint(mobile) {
+        .swiper-slide {
+            width: 30rem;
+        }
+    }
+}
+
+.automate__list-item {
+    display: flex;
+    flex-direction: column;
+    &::before {
+        display: none;
+    }
+}
+
+.automate__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    padding: 5rem;
+    border: 1px solid #c1c1c1;
+    border-radius: 2rem;
+
+    @include breakpoint(mobile) {
+        padding: 3.4rem 2.5rem;
+    }
+}
+
+.automate__card-photo-container {
+    position: relative;
+
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    margin: 0 auto;
+    margin-bottom: 7.5rem;
+    width: 20rem;
+
+    @include breakpoint(mobile) {
+        width: 16.8rem;
+        margin-bottom: 2.5rem;
+    }
+    &::after {
+        content: counter(ordered-list);
+        position: absolute;
+        right: 2rem;
+        bottom: -1rem;
+        width: 4.6rem;
+        height: 4.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: normal;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        color: white;
+        background-color: var(--primary-color);
+        border: 0.2rem solid white;
+        z-index: 40;
+        border-radius: 50%;
+
+        @include breakpoint(mobile) {
+            width: 4rem;
+            height: 4rem;
+            right: 0;
+            bottom: 0;
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+    }
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+}
+
+.automate__card-photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.automate__card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.automate__card-text {
+    color: #c1c1c1;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
