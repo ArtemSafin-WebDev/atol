@@ -356,6 +356,7 @@
     background-color: var(--primary-color);
     letter-spacing: 0.02em;
     color: white;
+    transition: color .2s, transform .2s;
 
     @include breakpoint(mobile) {
         padding: 1.4rem;
@@ -369,6 +370,11 @@
     &:link,
     &:visited {
         color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        transform: scale(0.98);
     }
     &::before {
         content: '';

@@ -228,6 +228,12 @@
         height: 100%;
         fill: currentColor;
     }
+
+    .no-touch &:hover {
+        svg {
+            fill: var(--primary-color)
+        }
+    }
 }
 
 .partners__card-modal-link {

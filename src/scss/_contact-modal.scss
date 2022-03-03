@@ -74,10 +74,19 @@
     border: 0.2rem solid black;
     border-radius: 50%;
     z-index: 20;
+    transition: background-color .2s;
     svg {
         width: 1.2rem;
         height: 1.2rem;
         fill: black;
+        transition: fill .2s;
+    }
+
+    .no-touch &:hover {
+        
+        svg {
+            fill: var(--primary-color);
+        }
     }
 
     @include breakpoint(mobile) {
@@ -228,7 +237,8 @@ textarea.contact-modal__form-input {
     background-color: var(--primary-color);
     letter-spacing: 0.02em;
     color: white;
-
+    transition: color .2s, transform .2s;
+    transform: translateZ(0);
     @include breakpoint(mobile) {
         padding: 1.4rem;
         margin: 0;
@@ -241,6 +251,11 @@ textarea.contact-modal__form-input {
     &:link,
     &:visited {
         color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        transform: scale(0.98);
     }
     &::before {
         content: '';
