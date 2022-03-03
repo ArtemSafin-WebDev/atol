@@ -131,3 +131,15 @@
         }
     }
 }
+
+.intro__btn--callback {
+    @include breakpointMF(small-tablet) {
+        display: none;
+    }
+}
+
+.intro__btn:not(.intro__btn--callback) {
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}

@@ -185,7 +185,7 @@
         left: calc(-1 * var(--content-padding));
         right: calc(-1 * var(--content-padding));
         height: auto;
-        top: -1px;
+        top: 0;
         bottom: 0;
     }
     &::after {
