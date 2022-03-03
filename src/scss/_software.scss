@@ -182,6 +182,7 @@
         transform-origin: center top;
         transform: scaleY(calc(1 * var(--progress)));
         background-color: #fff;
+        transition: transform .3s;
     }
 }
 

@@ -10,7 +10,7 @@ export default function softwareScroll() {
 
             progress.style.setProperty('--progress', scrollProgress.toFixed(2));
 
-            console.log('Scrollprogress', scrollProgress);
+            // console.log('Scrollprogress', scrollProgress);
         };
 
         scrollWrapper.addEventListener('scroll', handleScroll);
