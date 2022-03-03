@@ -19,6 +19,7 @@ import businessSlider from './businessSlider';
 import automateSlider from './automateSlider';
 import menu from './menu';
 import productDropdowns from './productDropdowns';
+import softwareScroll from './softwareScroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     automateSlider();
     menu();
     productDropdowns();
+    softwareScroll();
 });
 
 document.addEventListener('lazyloaded', () => {

@@ -1,0 +1,266 @@
+.software {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include breakpointMF(small-tablet) {
+        flex-grow: 1;
+        padding-right: 3rem;
+        padding-left: calc(var(--sidebar-width) + 11rem);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    @include breakpoint(mobile) {
+        margin-bottom: 7rem;
+    }
+}
+
+.software__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    flex-grow: 1;
+
+    @include breakpoint(mobile) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.software__col {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.software__image {
+    display: block;
+    max-width: 55.6rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+
+    @include breakpoint(mobile) {
+        max-width: 30rem;
+        margin: 0 auto;
+        margin-top: -2.5rem;
+        margin-bottom: 0;
+    }
+}
+
+.software__small-heading {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #c1c1c1;
+    font-family: var(--cofo);
+    margin-bottom: 3rem;
+    margin-top: auto;
+    @include breakpoint(mobile) {
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 140%;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        order: -3;
+    }
+}
+
+.software__large-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.4rem;
+    line-height: 115%;
+    margin-bottom: 6.5rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.6rem;
+        line-height: 105%;
+        margin-bottom: 2.5rem;
+        order: -2;
+    }
+}
+
+.software__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        gap: 1.2rem;
+        flex-wrap: nowrap;
+        order: 10;
+    }
+}
+
+.software__button {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding: 1.3rem;
+    border: 1px solid #ffffff;
+    border-radius: 8rem;
+    color: white;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        flex-shrink: 0;
+        margin-right: 1rem;
+    }
+
+    @include breakpoint(mobile) {
+        align-self: flex-start;
+    }
+}
+
+.software__advantages {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    
+
+    @include breakpoint(mobile) {
+        margin-top: -3rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.software__advantages-scroll-wrapper {
+    @include breakpointMF(small-tablet) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        overflow-x: hidden;
+        mask-image: linear-gradient(to top, transparent 0, rgba(0, 0, 0, 0.8) 40rem);
+        mask-image: linear-gradient(to top, transparent 0, rgba(0, 0, 0, 0.8) 40rem, rgba(0, 0, 0, 0.8) calc(100% - 3rem), transparent 100%);
+        @include noScrollbar();
+    }
+}
+
+.software__advantages-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.22);
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center top;
+        transform: scaleY(calc(1 * var(--progress)));
+        background-color: #fff;
+    }
+}
+
+.software__advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding-bottom: 30rem;
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        gap: 4.5rem;
+    }
+}
+
+.software__advantages-card {
+    display: flex;
+    align-items: flex-start;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.software__advantages-card-icon {
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+    margin-right: 4.2rem;
+    @include breakpoint(mobile) {
+        margin: 0;
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.software__advantages-card-icon-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.software__advantages-card-content {
+    width: 50%;
+    flex-grow: 1;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+    }
+}
+
+.software__advantages-card-title {
+    font-weight: normal;
+    font-size: 2.8rem;
+    line-height: 120%;
+    margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        font-weight: normal;
+        font-size: 1.8rem;
+        line-height: 120%;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.software__advantages-card-text {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: #c1c1c1;
+    font-family: var(--cofo);
+
+    @include breakpoint(mobile) {
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 130%;
+    }
+}
