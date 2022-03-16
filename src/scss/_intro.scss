@@ -39,13 +39,15 @@
 }
 
 .intro__content {
-  
+    
 
     @include breakpointMF(small-tablet) {
         max-width: 70rem;
         margin-left: auto;
         margin-top: 20rem;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -83,7 +85,8 @@
     
 
     @include breakpointMF(small-tablet) {
-        position: absolute;
+        // position: absolute;
+        align-self: center;
         width: 22.2rem;
         height: 22.2rem;
         border-radius: 50%;
@@ -97,14 +100,14 @@
         background-color: var(--primary-color);
         line-height: 140%;
         z-index: 40;
-        transform: translate(-50%, -50%);
-        left: 55%;
-        top: 80%;
+        // transform: translate(-50%, -50%);
+        // left: 85%;
+        // top: 80%;
         transition: transform .4s;
-
+        margin-top: 7rem;
         .no-touch &:hover,
         .touch &:active {
-            transform:  translate(-50%, -50%) scale(0.97);
+            transform:  scale(0.97);
         }
     }
 

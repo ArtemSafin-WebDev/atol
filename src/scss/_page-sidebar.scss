@@ -13,7 +13,7 @@
 
     @include breakpointMF(small-tablet) {
         background: rgba(0, 0, 0, 0.09);
-        backdrop-filter: blur(3.4rem);
+        backdrop-filter: blur(3px);
     }
     @include breakpoint(mobile) {
         position: absolute;
@@ -242,7 +242,7 @@
     color: #c1c1c1;
     display: block;
     position: relative;
-    &::before { 
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -252,7 +252,7 @@
         width: 0.6rem;
         height: 0.6rem;
         opacity: 0;
-        transition: opacity .2s;
+        transition: opacity 0.2s;
         border-radius: 50%;
     }
 
@@ -286,7 +286,7 @@
 }
 
 .page-sidebar__nav-link-text {
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .page-sidebar__contacts {
@@ -384,5 +384,34 @@
     &.active {
         color: white;
         background-color: var(--primary-color);
+    }
+}
+
+.page-sidebar__contact-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1.4rem 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    transition: transform 0.2s;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 7rem;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        transform: scale(0.95);
+    }
+
+    @include breakpoint(mobile) {
+        display: none;
     }
 }

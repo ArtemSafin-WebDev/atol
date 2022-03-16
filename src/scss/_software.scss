@@ -265,3 +265,38 @@
         line-height: 130%;
     }
 }
+
+
+.software__testing {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding: 1.9rem 3rem;
+    color: white;
+    border-radius: 8rem;
+    background-color: var(--primary-color);
+    transition: transform .2s;
+    margin-top: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        transform: scale(0.99);
+    }
+
+    @include breakpoint(mobile) {
+        align-self: flex-start;
+        margin-top: 0;
+        margin-bottom: 1.2rem;
+    }
+
+  
+}

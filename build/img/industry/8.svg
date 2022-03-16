@@ -1,0 +1,12 @@
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15.5" cy="16.5" r="0.5" transform="rotate(-180 15.5 16.5)" fill="white"/>
+<circle cx="18.5" cy="17.5" r="0.5" transform="rotate(-180 18.5 17.5)" fill="white"/>
+<circle cx="16.5" cy="18.5" r="0.5" transform="rotate(-180 16.5 18.5)" fill="white"/>
+<circle cx="18.5" cy="14.5" r="0.5" transform="rotate(-180 18.5 14.5)" fill="white"/>
+<circle cx="21.5" cy="16.5" r="0.5" transform="rotate(-180 21.5 16.5)" fill="white"/>
+<circle cx="24.5" cy="17.5" r="0.5" transform="rotate(-180 24.5 17.5)" fill="white"/>
+<circle cx="23.5" cy="19.5" r="0.5" transform="rotate(-180 23.5 19.5)" fill="white"/>
+<circle cx="20.5" cy="18.5" r="0.5" transform="rotate(-180 20.5 18.5)" fill="white"/>
+<circle cx="13.5" cy="19.5" r="0.5" transform="rotate(-180 13.5 19.5)" fill="white"/>
+<path d="M11.0816 21.3333V17.8333C11.0816 15.5 13.0648 12 18.7317 12C24.3986 12 26.9488 15.5 26.9488 17.8333V21.3333M11.0816 21.3333H26.9488M11.0816 21.3333C10.1524 21.931 9.88951 22.8225 10.0394 23.6667M26.9488 21.3333C27.4775 21.6056 27.9383 22.6405 27.9943 23.6667M10.0394 23.6667C10.0394 25.4167 11.3275 26 12.4984 26C15.898 26 23.2653 26 26.0987 26C27.5938 26 28.0582 24.839 27.9943 23.6667M10.0394 23.6667H27.9943" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
