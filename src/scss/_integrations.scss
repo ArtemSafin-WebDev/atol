@@ -49,9 +49,10 @@
     display: grid;
     grid-template-columns: minmax(0, 54rem) 1fr;
     grid-gap: 7rem;
-
+    align-items: center;
     @include breakpoint(mobile) {
         grid-template-columns: minmax(0, 1fr);
+        align-items: stretch;
         grid-gap: 2.2rem;
         padding: 2rem;
     }

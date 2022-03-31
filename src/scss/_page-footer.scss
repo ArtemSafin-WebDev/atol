@@ -113,6 +113,16 @@
     }
 }
 
+.page-footer__website-link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .page-footer__social-link {
     width: 3rem;
     height: 3rem;

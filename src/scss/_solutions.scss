@@ -462,7 +462,7 @@
 
 .solutions__modal-text {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 140%;
     color: #c1c1c1;
     font-family: var(--cofo);
@@ -470,7 +470,7 @@
 
     @include breakpoint(mobile) {
         font-weight: normal;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 140%;
         margin-bottom: 2rem;
     }
@@ -571,16 +571,35 @@
 .solutions__modal-accordion-content-inner {
     padding-bottom: 3.5rem;
     max-width: 60rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
 }
 
 .solutions__modal-accordion-content {
     height: 0;
     overflow: hidden;
 
+    img, video {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     p {
         margin-bottom: 1.5rem;
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
         }
     }
 }
